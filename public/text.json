@@ -1,0 +1,23 @@
+{
+    "es": {
+      "welcome": "Bienvenido",
+      "greeting": "Hola, ¿cómo estás?",
+      "menu" : {
+        "home": "Inicio",
+        "about": "Acerca de Mi",
+        "skills" : "Habilidades",
+        "contact" : "Contacto"
+      }
+    },
+    "en": {
+      "welcome": "Welcome",
+      "greeting": "Hello, how are you?",
+      "menu" : {
+        "home": "Home",
+        "about": "About",
+        "skills" : "Skills",
+        "contact" : "Contact"
+      }
+    }
+  }
+  
