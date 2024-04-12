@@ -245,8 +245,8 @@ function initializeBalls() {
     ball.style.background = colors[Math.floor(Math.random() * colors.length)];
 
     // Calculamos las posiciones dentro de un rango seguro
-    const safeLeft = Math.random() * (window.innerWidth  - 120); // Restamos 50 para evitar que la bola se vaya muy al borde
-    const safeTop = Math.random() * (window.innerHeight - 120); // Restamos 50 para evitar que la bola se vaya muy al borde
+    const safeLeft = Math.random() * (window.innerWidth  - 250); // Restamos 50 para evitar que la bola se vaya muy al borde
+    const safeTop = Math.random() * (window.innerHeight - 250); // Restamos 50 para evitar que la bola se vaya muy al borde
 
     ball.style.left = `${safeLeft}px`;
     ball.style.top = `${safeTop}px`;
