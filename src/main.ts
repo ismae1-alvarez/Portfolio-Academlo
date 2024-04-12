@@ -329,38 +329,6 @@ if (contactForm) {
 
 
 
-
-// function getFormData(): { name: string; email: string; message: string } {
-//   const name = document.getElementById('name')?.value as string;
-//   const email = document.getElementById('email')?.value as string;
-//   const message = document.getElementById('message')?.value as string;
-
-//   return { name, email, message };
-// }
-
-
-
-// Send Emails 
-// let nombre : string = (document.getElementById("name") as  HTMLInputElement).value;
-// let correo : string = (document.getElementById("email") as  HTMLInputElement).value;
-// let mensaje : string = (document.getElementById("message") as  HTMLInputElement).value;
-
-// function sendEmail() {
-//   let parms : {
-//     name : string,
-//     email : string,
-//     messages : string
-//   }= {
-//     name : nombre,
-//     email : correo,
-//     messages : mensaje
-//   }
-  
-
-//   emailjs.send("service_hywsrg1", "template_a7oah5a", parms)
-// }
-
-
 // Current Year
 const currentYearElement = document.getElementById('currentYear')!;
 
