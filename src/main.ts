@@ -287,26 +287,31 @@ function handleSubmit(event: Event) {
 
   // const form = document.getElementById('form') as HTMLFormElement;
 
-  const name = document.getElementById('name')?.value as string || '';
-  const email = document.getElementById('email')?.value as string || '';
-  const message = document.getElementById('message')?.value as string || '';
+  const inputName = document.getElementById('name') as HTMLInputElement | null;
+  const inputEmail = document.getElementById('email') as HTMLInputElement | null;
+  const inputMessage = document.getElementById('email') as HTMLInputElement | null;
+
+
+  const nombre = inputName?.value
+  const correo = inputEmail?.value
+  const mensaje = inputMessage?.value
+
 
       const params :{
-        name : string,
-        email :  string,
-        message : string
+        name : any,
+        email :  any,
+        message : any
       } = {
-        name: name,
-        email: email,
-        message: message
+        name: nombre,
+        email: correo,
+        message: mensaje
       };
 
 
   emailjs.send('service_hywsrg1', 'template_a7oah5a', params)
     .then(function() {
       console.log("se envio")
-      
-      // form.reset();
+    
     }, function(error) {
       console.error('Error al enviar el correo:', error);
       alert('Ocurrió un error al enviar el correo.');
