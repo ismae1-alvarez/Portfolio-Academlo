@@ -227,7 +227,7 @@ reveal();
 
 // Background Balls Animation
 const colors: string[] = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
-const numBalls: number = 50;
+const numBalls: number = 100;
 
 let balls: HTMLElement[] = [];
 
