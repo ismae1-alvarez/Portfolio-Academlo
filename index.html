@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN Icons -->
     <script src="https://kit.fontawesome.com/71c4986f1e.js" crossorigin="anonymous"></script>
+    <!-- Title -->
+    <title>Portfolio</title>
 
-
-  <title>Portfolio</title>
   </head>
-  <body class="bg-light text-black dark:bg-dark dark:text-white transition-all">
+
+  <body class="bg-light text-black dark:bg-dark dark:text-white transition-all max-w-[1440px] m-auto relative">
 
       <header class="my-6 md:my-8 sticky z-20 h-10 w-full top-0">
-          <nav class="backdrop-filter backdrop-blur flex items-center justify-between h-16 w-full after:absolute after:w-full after:h-full font-semibold">
-            
-            <div class="px-10 flex justify-between w-full">
-              <h1 class="font-bold uppercase text-xl z-10 hover:cursor-pointer">Portfolio</h1>
+        <!-- NavBar -->
+          <nav class="backdrop-filter backdrop-blur flex items-center justify-between h-16 w-full after:absolute after:w-full after:h-full font-semibold top-0">
 
-              <ul class="flex gap-10 z-10 items-center">
-                <li><a href="#home" id="home" class="font-normal  hover:opacity-100 opacity-50 transition duration-300 ease-in-out">Inicio</a></li>
+            <div class="px-10 flex justify-between w-full items-center relative">
+              <a href="" class="hover:cursor-pointer z-10 "><i class="fa-solid fa-i "></i></a>
+
+              <ul id="menuTranslate" class="flex gap-10 z-10 items-center  transition transition-all duration-700 linear flex mobil:hidden">
+                <!-- <a href=""><i class="fa-solid fa-x"></i></a> -->
+            
+                <li><a href="#home" id="home" class="font-normal  hover:opacity-100 opacity-50 transition duration-300 ease-in-out  activete">Inicio</a></li>
                 <li><a href="#about" id="about" class="font-normal  hover:opacity-100 opacity-50 transition duration-300 ease-in-out">Acerca de Mi</a></li>
                 <li><a href="#skills" id="skills" class="font-normal  hover:opacity-100 opacity-50 transition duration-300 ease-in-out">Habilidades</a></li>
                 <li><a href="#contact" id="contact" class="font-normal  hover:opacity-100 opacity-50 transition duration-300 ease-in-out">Contacto</a></li>
@@ -26,9 +31,9 @@
 
               <div class="flex items-center z-10 gap-5">
                   <!-- darkMode -->
-                  <label class="relative inline-flex cursor-pointer items-center duration-200 transition-all">
-                      <input id="darkMode" type="checkbox" class="peer sr-only"  />
-                      <div class="peer h-6 w-11 rounded-full border-black bg-gray-600 after:absolute after:left-[2px] after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-black "></div>
+                  <label class="relative inline-flex cursor-pointer items-center duration-200 transition-all ">
+                      <input id="darkMode" type="checkbox" class="peer sr-only "  />
+                      <div class="peer h-6 w-11 rounded-full border-black bg-gray-600 after:absolute after:left-[2px] after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-black"></div>
                   </label>
 
                   <!-- leanguage -->
@@ -37,92 +42,508 @@
                       <div class="peer h-6 w-11 rounded-full border-black bg-gray-600 after:absolute after:left-[2px] after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-black "></div>
                   </label>
 
+                  <a  class=" cursor-pointer hidden mobil:flex" id="menuButton" >
+                    <i class="fa-solid fa-bars fa-2x "></i>
+                  </a>
 
-              </div>
+                  <ul class="mobil:flex hidden w-60 bg-first-color flex-col absolute right-0 top-14 border font-semibold text-lg font-sans px-2 rounded gap-10 right-10 transition-all duration-700"  id="menuList">
+                      <li><a href="#home" id="home" class="font-normal  hover:opacity-100 opacity-50 transition duration-300 ease-in-out ">Inicio</a></li>
+                      <li><a href="#about" id="about" class="font-normal  hover:opacity-100 opacity-50 transition duration-300 ease-in-out">Acerca de Mi</a></li>
+                      <li><a href="#skills" id="skills" class="font-normal  hover:opacity-100 opacity-50 transition duration-300 ease-in-out">Habilidades</a></li>
+                      <li><a href="#contact" id="contact" class="font-normal  hover:opacity-100 opacity-50 transition duration-300 ease-in-out">Contacto</a></li>
+                </ul>
+
+                  </div>
             </div>
-          </nav>     
+          </nav>
       </header>
 
-      <main class="px-10 my-12 ">
-        <!-- Me -->
-        <section class="grid grid-cols-2">
-            <div class="grid gap-3">
-              <h2 class="grid text-4xl font-bold" id="title">
-                <span class="font-normal text-2xl">
-                  Hello it's Me
+  <main class="px-10 my-12 relative" >
+        <!-- Home -->
+        <section id="home" >
+
+            <div class="grid grid-cols-2  mobil:grid-cols-1 " >
+              <!-- Home Description -->
+            <div  class="grid gap-3 justify-center mobil:order-2 order-1" id="">
+              <h2 class="grid text-4xl font-bold gap-3" id="title">
+                <span id="greet" class="font-normal text-2xl flex gap-1">
+                  Hola, soy yo
+                  <div class="animate-wave ">👋🏼</div>
                 </span>
                 Ismael Alvarez
               </h2>
-    
-              <h4 class="text-xl font-semibold">
-                And I'am <span class="pr-3 text-second-color texto-animado" id="write-text" ></span>
-              </h4>
-    
-              <h4 class="text-2xl">And I'm a <span class="pr-3 text-second-color texto-animado" id="write-text" ></span></h4>
-    
-              <p class="text-gl">
+
+              <h4 id="moreGreet" class="text-2xl">And I'm a <span class="pr-3 text-second-color texto-animado" id="write-text" ></span></h4>
+
+              <p id="smallDescription" class="text-gl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at sunt ea dolorum a reiciendis itaque illo
               </p>
-    
-              <ul class="flex gap-5 pt-5">
+              <!-- Home icons -->
+              <ul class="flex gap-3 pt-5">
                 <li>
-                  <a href="">
+                  <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2">
                     <i class="fa-brands fa-github-square fa-2x"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2">
                     <i class="fa-brands fa-linkedin fa-2x"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2" >
                     <i class="fa-brands fa-square-x-twitter fa-2x"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2">
                     <i class="fa-brands fa-square-instagram fa-2x"></i>
                   </a>
                 </li>
               </ul>
-    
-              <button class="p-3 dark:bg-white dark:text-black font-semibold bg-black text-white rounded-md w-fit">
+
+              <button id="firstDowlnload" class="transition ease-in-out delay-150 dark:bg-white dark:text-black bg-black text-white hover:-translate-y-1 border-transparent border-4 hover:scale-110 hover:border-red-900 duration-300 p-3 rounded-md w-fit">
                 Dowlnload CV
               </button>
+
             </div>
-            <div class="flex justify-center relative items-start h-full ">
-    
-              <div class="dark:bg-white bg-black w-60 h-64 rounded-full  z-0 absolute transition-transform duration-300 ease-in-out transform hover:blur-md " >
+
+            <!-- Home Image -->
+            <div class="flex justify-center relative items-start h-full  mobil:order-1 order-2 mobil:py-10">
+
+                <div class="dark:bg-white bg-black w-60 h-64 rounded-full  z-0 absolute transition-transform duration-300 ease-in-out transform hover:blur-md relative  overflow-hidden items-center justify-center " >
+                  <img class=" absolute w-full h-full cursor-pointer text-center" src="img/profile.png" alt="profile">
+                </div>
+
+                <div class="absolute  rounded-full w-fit flex overflow-hidden ">
               </div>
-              
-              <div class="relative  rounded-full w-60 flex overflow-hidden ">
-                ><img src="img/profile.png" alt="profile">
             </div>
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="my-10">
+          <div class="reveal bg-[#ddd0c8] dark:bg-[#2b2b2b] rounded-md">
+
+            <div class="grid mobil:grid-cols-1 grid-cols-2 p-10 items-center justify-center w-full h-full gap-3 mobil:gap-10">
+
+              <!-- About Image  -->
+              <div class="flex justify-center relative items-start h-full animate-75 ">
+
+                  <div class="dark:bg-white bg-black w-60 h-64 rounded-full  z-0 absolute transition-transform duration-300 ease-in-out transform hover:blur-md " >
+                  </div>
+
+                  <div class="relative  rounded-full w-60 flex overflow-hidden ">
+                    ><img src="img/profile.png" alt="profile">
+                </div>
+              </div>
+
+
+              <!-- About Description -->
+              <div class="grid gap-5">
+                <h3 class=" text-4xl">
+                  About <span class="font-bold">Me</span>
+                </h3>
+                <h4  id="aboutTitle" class="font-semibold text-2xl">
+                  Fronted Developer
+                </h4>
+                <p id="aboutDescription" class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque natus impedit hic, rem atque veniam deserunt excepturi corrupti sint, nobis reprehenderit officiis explicabo, cumque necessitatibus iste! Consequuntur, aut aliquid!
+                </p>
+
+                <button id="secondDowlnload" class="transition ease-in-out delay-150 dark:bg-white dark:text-black bg-black text-white hover:-translate-y-1 border-transparent border-4 hover:scale-110 hover:border-red-900 duration-300 p-3 rounded-md w-fit mobil:m-auto">
+                  Dowlnload CV
+                </button>
+              </div>
+              </div>
+
+            </div>
+
           </div>
         </section>
-                
-        <!-- Services -->
-        <section class="my-10   grid md:grid-cols-3 grid-cols-1 gap-10  dark:text-white text-black">
 
-          <div class="grid sticky text-black text-center justify-center">
-            <div class="group relative flex flex-col overflow-hidden ">
-              <img src="img/images1.png" alt='proyect1' 
-              class='rounded-xl transition-transform translate-y-0 duration-500 ease-out group-hover:translate-y-0 hover:cursor-pointer'>
 
-              <div class="absolute dark:bg-prueba2 bg-prueba rounded-xl grid  py-2 transition-transform duration-500 ease-out top-0 right-0 bottom-0 left-0 justify-center translate-y-full group-hover:-translate-y-0 hover:cursor-pointer ">
-                  <h2 class="font-bold text-xl text-white dark:text-black">Web Designer</h2>
-                  <p class="semibold text-white dark:text-black">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, hic iure quia veniam, aperiam impedit adipisci,
-                  </p>
-              </div> 
+        <!-- Skills  -->
+        <section id="skills" class="my-10">
+          <div class="reveal">
+            <h4 id="titleSkills" class="font-bold text-3xl text-center py-5">
+              Skills
+            </h4>
+            <!-- Skills grid -->
+            <div class="grid mobil:grid-cols-1 mobil:grid-rows-5 grid-cols-6 grid-rows-9 mobil:h-full min-h-[700px] gap-3 w-full">
+
+              <!-- Skills Section 1 -->
+              <div class="mobil:hidden flex rounded-xl relative    row-start-1 row-end-7  col-start-1 col-end-4 ">
+
+                <div class="grid relative text-black text-center justify-center ">
+                  <div class="group relative flex flex-col overflow-hidden">
+
+                    <img src="img/person.jpg" class="rounded-xl transition-transform translate-y-0 duration-500 ease-out group-hover:translate-y-0 hover:cursor-pointer  relative " alt="tesla">
+
+                    <div class="absolute dark:bg-prueba2 bg-[#777777] rounded-xl grid  p-3 transition-transform duration-500 ease-out top-0 right-0 bottom-0 left-0 justify-center -translate-y-full group-hover:translate-y-0 hover:cursor-pointer ">
+                      <h2 class="font-bold text-xl text-white dark:text-black">Web Designer</h2>
+                      <p class="semibold text-white dark:text-black">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, hic iure quia veniam, aperiam impedit adipisci,
+                      </p>
+                      <ul class="flex justify-between ">
+                        <li>
+                          <i class="fa-brands fa-square-js text-white fa-2x"></i>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-html5 text-white fa-2x"></i></a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-css3-alt text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-node-js text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-python text-white fa-2x"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+              <!-- Skills Section 2 -->
+              <div class=" mobil:row-start-1 mobil:row-end-2 mobil:col-start-1 mobil-col-end-2 rounded-xl row-start-7 row-end-10 col-start-1 col-end-3 w-full">
+
+                <div class="grid relative text-black text-center justify-cente ">
+                  <div class="group relative flex flex-col overflow-hidden">
+
+
+                    <img src="img/airbnb.png" class="rounded-xl transition-transform translate-y-0 duration-500 ease-out group-hover:translate-y-0 hover:cursor-pointer  relative  h-full w-full" alt="airbnb">
+
+
+
+                    <div class="absolute dark:bg-prueba2 bg-[#777777] rounded-xl grid  p-3 transition-transform duration-500 ease-out top-0 right-0 bottom-0 left-0 justify-center translate-y-full group-hover:-translate-y-0 hover:cursor-pointer ">
+                      <h2 class="font-bold text-xl text-white dark:text-black">Web Designer</h2>
+                      <p class="semibold text-white dark:text-black">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, hic iure quia veniam, aperiam impedit adipisci,
+                      </p>
+                      <ul class="flex justify-between ">
+                        <li>
+                          <i class="fa-brands fa-square-js text-white fa-2x"></i>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-html5 text-white fa-2x"></i></a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-css3-alt text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-node-js text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-python text-white fa-2x"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Skills Section 3 -->
+              <div class=" mobil:row-start-2 mobil:row-end-3 mobil:col-start-1 mobil-col-end-2  row-start-7 row-end-10  col-start-3 col-end-5 rounded-xl ">
+
+                <div class="grid relative text-black text-center justify-cente ">
+                  <div class="group relative flex flex-col overflow-hidden">
+
+                    <img src="img/tesla.png" class="rounded-xl transition-transform translate-y-0 duration-500 ease-out group-hover:translate-y-0 hover:cursor-pointer  relative  h-full w-full" alt="tesla">
+
+                    <div class="absolute dark:bg-prueba2 bg-[#777777] rounded-xl grid  p-3 transition-transform duration-500 ease-out top-0 right-0 bottom-0 left-0 justify-center -translate-y-full group-hover:translate-y-0 hover:cursor-pointer ">
+                      <h2 class="font-bold text-xl text-white dark:text-black">Web Designer</h2>
+                      <p class="semibold text-white dark:text-black">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, hic iure quia veniam, aperiam impedit adipisci,
+                      </p>
+                      <ul class="flex justify-between ">
+                        <li>
+                          <i class="fa-brands fa-square-js text-white fa-2x"></i>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-html5 text-white fa-2x"></i></a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-css3-alt text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-node-js text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-python text-white fa-2x"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Buscar imagen -->
+              <!-- Skills Section 4 -->
+              <div class="mobil:row-start-3 mobil:row-end-4 mobil:col-start-1 mobil-col-end-2 row-start-7 row-end-10 col-start-5 col-end-7 ">
+
+                <div class="grid relative text-black text-center justify-cente ">
+                  <div class="group relative flex flex-col overflow-hidden">
+
+                    <img src="img/airbnb.png" class="rounded-xl transition-transform translate-y-0 duration-500 ease-out group-hover:translate-y-0 hover:cursor-pointer  relative  h-full w-full" alt="airbnb">
+
+                    <div class="absolute dark:bg-prueba2 bg-[#777777] rounded-xl grid  p-3 transition-transform duration-500 ease-out top-0 right-0 bottom-0 left-0 justify-center translate-y-full group-hover:-translate-y-0 hover:cursor-pointer ">
+                      <h2 class="font-bold text-xl text-white dark:text-black">Web Designer</h2>
+                      <p class="semibold text-white dark:text-black">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, hic iure quia veniam, aperiam impedit adipisci,
+                      </p>
+                      <ul class="flex justify-between ">
+                        <li>
+                          <i class="fa-brands fa-square-js text-white fa-2x"></i>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-html5 text-white fa-2x"></i></a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-css3-alt text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-node-js text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-python text-white fa-2x"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- Skills Section 4 -->
+              <div class=" mobil:row-start-4 mobil:row-end-5 mobil:col-start-1 mobil-col-end-2 col-start-4 col-end-7 row-start-1 row-end-4 ">
+              <div class="grid relative text-black text-center justify-cente ">
+                  <div class="group relative flex flex-col overflow-hidden">
+
+                    <img src="img/airbnb.png" class="rounded-xl transition-transform translate-y-0 duration-500 ease-out group-hover:translate-y-0 hover:cursor-pointer  relative  h-full w-full" alt="airbnb">
+
+                    <div class="absolute dark:bg-prueba2 bg-[#777777] rounded-xl grid  p-3 transition-transform duration-500 ease-out top-0 right-0 bottom-0 left-0 justify-center -translate-x-full group-hover:translate-x-0 hover:cursor-pointer ">
+                      <h2 class="font-bold text-xl text-white dark:text-black">Web Designer</h2>
+                      <p class="semibold text-white dark:text-black">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, hic iure quia veniam, aperiam impedit adipisci,
+                      </p>
+                      <ul class="flex justify-between ">
+                        <li>
+                          <i class="fa-brands fa-square-js text-white fa-2x"></i>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-html5 text-white fa-2x"></i></a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-css3-alt text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-node-js text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-python text-white fa-2x"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skills Section 5-->
+              <div class="mobil:row-start-5 mobil:row-end-6 mobil:col-start-1 mobil-col-end-2  col-start-4 col-end-7  row-start-4 row-end-7">
+
+                <div class="grid relative text-black text-center justify-cente ">
+                  <div class="group relative flex flex-col overflow-hidden">
+
+                    <img src="img/airbnb.png" class="rounded-xl transition-transform translate-y-0 duration-500 ease-out group-hover:translate-y-0 hover:cursor-pointer  relative  h-full w-full" alt="airbnb">
+
+                    <div class="absolute dark:bg-prueba2 bg-[#777777] rounded-xl grid  p-3 transition-transform duration-500 ease-out top-0 right-0 bottom-0 left-0 justify-center translate-x-full group-hover:translate-x-0 hover:cursor-pointer ">
+                      <h2 class="font-bold text-xl text-white dark:text-black">Web Designer</h2>
+                      <p class="semibold text-white dark:text-black">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, hic iure quia veniam, aperiam impedit adipisci,
+                      </p>
+                      <ul class="flex justify-between ">
+                        <li>
+                          <i class="fa-brands fa-square-js text-white fa-2x"></i>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-html5 text-white fa-2x"></i></a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-css3-alt text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-node-js text-white fa-2x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                          <i class="fa-brands fa-python text-white fa-2x"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+              </div>
+
 
             </div>
+
+          </div>
+
         </section>
 
+
+
+        <!-- Contact -->
+        <section id="contact" class="my-10">
+
+          <div class="reveal bg-[#ddd0c8] dark:bg-[#2b2b2b] rounded-md">
+            <div class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  dark:text-gray-800">
+              <div class="flex flex-col justify-between">
+                <div class="space-y-2">
+                  <h2 class="text-xl font-bold leading-tight lg:text-5xl dark:text-white" id="titleContact">Siempre listo para nuevas aventuras y grandes conversaciones.</h2>
+                  <div id="descriptionContact" class="dark:text-white">¡Contáctame y hagamos magia juntos!</div>
+                </div>
+                <img src="/img/contact-image.jpg" alt="" class="w-fullp-6 h-52 md:h-64 origin-top-left rotate-6 hover:rotate-0 transition-all duration-300 ease-linear cursor-pointer rounded">
+              </div>
+
+              <!-- Contact Form -->
+              <form id="form" class="space-y-6 dark:text-white">
+                <div>
+                  <label for="name" id="inputName" class="text-sm">Full name</label>
+                  <input id="name" type="text" placeholder="" class="w-full p-3 rounded dark:bg-gray-100" name="name">
+                </div>
+                <div>
+                  <label for="email" id="inputEmail" class="text-sm">Email</label>
+                  <input id="email" type="email" class="w-full p-3 rounded dark:bg-gray-100" name="email">
+                </div>
+                <div>
+                  <label id="inputMessage" for="message" class="text-sm">Message</label>
+                  <textarea id="message" rows="3" class="w-full p-3 rounded dark:bg-gray-100" name="message"></textarea>
+                </div>
+                <button type="submit" class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-600 dark:text-gray-100 bg-slate-400" >Send Message</button>
+              </form>
+            </div>
+              </div>
+            </section>
+          </div>
+
+        </section>
       </main>
 
-
+      <!-- Foooter -->
+      <footer id="footer" class="bg-[#ddd0c8] dark:bg-white w-full px-10">
+        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8 reveal px-10">
+            <div class="flex flex-wrap justify-center -mx-5 -my-2">
+                <div class="px-5 py-2">
+                    <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        About
+                    </a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        Blog
+                    </a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        Team
+                    </a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        Pricing
+                    </a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        Contact
+                    </a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        Terms
+                    </a>
+                </div>
+              </div>
+            <!-- Footer icons -->
+            <div class="flex justify-center mt-8 space-x-6">
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">GitHub</span>
+                    <i class="fa-brands fa-github-square fa-2x"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Linkedin</span>
+                    <i class="fa-brands fa-linkedin fa-2x"></i> 
+                </a>
+  
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">X</span>
+                    <i class="fa-brands fa-square-x-twitter fa-2x"></i>  
+                </a>
+  
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fa-brands fa-square-instagram fa-2x"></i>
+                </a>
+                
+            </div>
+            <p class="mt-8 text-base leading-6 text-center text-gray-400">
+                © <span id="currentYear"></span> SomeCompany, Inc. All rights reserved.
+            </p>
+        </div>
+      </footer>
+  
+  
+  
+   
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

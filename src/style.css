@@ -13,8 +13,65 @@
         --color-text: #ffffff;
     }
 }
-
 body {
     background-color: var(--color-fondo);
     color: var(--color-text);
 }
+
+
+
+@layer components {
+    .activete {
+      @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+    }
+    /* .activete  {
+        @apply border-b-2 border-b-black  
+    } */
+
+  
+
+    .reveal{ 
+        @apply relative -translate-x-[1000px] opacity-0 duration-700 ease-linear
+    }
+    .active { 
+        @apply translate-x-[0px] opacity-100
+    }
+    .triangle {
+        @apply absolute   opacity-100 -z-20
+    }
+    .ball{
+        @apply absolute rounded-full   opacity-100 -z-20
+    }
+  }
+
+  @layer utilities {
+     /* animation checar con ale */
+    .box::before{
+        @apply content-[''] absolute bg-gradient-conic-blue w-full h-full top-[-25%] left-[-25%] 
+    }
+
+    @keyframes wave {
+        0% { transform: rotate(0.0deg); }
+        10% { transform: rotate(14.0deg); }
+        20% { transform: rotate(-8.0deg); }
+        30% { transform: rotate(14.0deg); }
+        40% { transform: rotate(-4.0deg); }
+        50% { transform: rotate(10.0deg); }
+        60% { transform: rotate(0.0deg); }
+        100% { transform: rotate(0.0deg); }
+      }
+      .animate-wave {
+        animation: wave 2s infinite;
+      }
+
+      /* animation checar con ale */
+      @keyframes fullSpin {
+        from { transform: rotate(0deg);}
+        to {transform: rotate(-360deg);}
+      }
+
+      .animate-fullSpin{
+        animation: fullSpin 3s linear infinite;
+      }
+   
+  }

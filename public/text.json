@@ -1,8 +1,19 @@
 {
     "es": {
-      "welcome": "Bienvenido",
-      "greeting": "Hola, ¿cómo estás?",
-      "menu" : {
+      "greet" : "Hola, soy yo",
+      "moreGreet" : "Y yo soy un",
+      "smallDescription" : "¡Soy un programador full stack altamente capacitado y versátil! Poseo un conocimiento profundo de las tecnologías web, abarcando tanto el desarrollo del lado del cliente (front-end) como del servidor (back-end).",
+      "firstDowlnload" : "Descargar CV",
+      "aboutTitle" : "Desarrollador Deloper",
+      "aboutDescription" : "¡Soy un programador full stack altamente capacitado y versátil! Poseo un conocimiento profundo de las tecnologías web, abarcando tanto el desarrollo del lado del cliente (front-end) como del servidor (back-end).",
+      "inputName" : "Nombre Completo",
+      "secondDowlnload" : "Descargar CV",
+      "titleSkills" : "Habilidades",
+      "titleContact": "Siempre listo para nuevas aventuras y grandes conversaciones",
+      "descriptionContact" : "¡Contáctame y hagamos magia juntos!",
+      "inputEmail" : "Corre",
+      "inputMessage" : "Mensaje",
+       "menu" : {
         "home": "Inicio",
         "about": "Acerca de Mi",
         "skills" : "Habilidades",
@@ -10,8 +21,19 @@
       }
     },
     "en": {
-      "welcome": "Welcome",
-      "greeting": "Hello, how are you?",
+      "greet" : "Hi, it's me",
+      "moreGreet" : "And I'm a",
+      "smallDescription" : "I am a highly trained and versatile full stack programmer! I possess an in-depth knowledge of web technologies, encompassing both front-end and server-side (back-end) development.",
+      "firstDowlnload" : "Download CV",
+      "aboutTitle" : "Fronted Deloper",
+      "aboutDescription" : "I am a highly trained and versatile full stack programmer! I possess an in-depth knowledge of web technologies, encompassing both front-end and server-side (back-end) development.",
+      "secondDowlnload" : "Download CV",
+      "titleSkills" : "skills",
+      "titleContact": "Always ready for new adventures and great conversations",
+      "descriptionContact" : "Contact me and let's make magic together!",
+      "inputName" : "Full Name",
+      "inputEmail" : "Email",
+      "inputMessage" :"Message",
       "menu" : {
         "home": "Home",
         "about": "About",
