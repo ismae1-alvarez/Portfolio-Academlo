@@ -37,7 +37,7 @@ body {
         @apply translate-x-[0px] opacity-100
     }
     .triangle {
-        @apply absolute   opacity-100 -z-20
+        @apply absolute   opacity-100 -z-20 
     }
     .ball{
         @apply absolute rounded-full   opacity-100 -z-20

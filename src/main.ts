@@ -243,8 +243,13 @@ function initializeBalls() {
     const ball = document.createElement("div");
     ball.classList.add("ball");
     ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-    ball.style.left = `${Math.floor(Math.random() * parent.offsetWidth)}px`;
-    ball.style.top = `${Math.floor(Math.random() * parent.offsetHeight)}px`;
+
+    // Calculamos las posiciones dentro de un rango seguro
+    const safeLeft = Math.random() * (window.innerWidth  - 100); // Restamos 50 para evitar que la bola se vaya muy al borde
+    const safeTop = Math.random() * (window.innerHeight - 100); // Restamos 50 para evitar que la bola se vaya muy al borde
+
+    ball.style.left = `${safeLeft}px`;
+    ball.style.top = `${safeTop}px`;
     ball.style.transform = `scale(${Math.random()})`;
     ball.style.width = `${Math.random()}em`;
     ball.style.height = ball.style.width;
@@ -264,7 +269,7 @@ function initializeBalls() {
         { transform: `translate(${toX}px, ${toY}px)` },
       ],
       {
-        duration: (Math.random() + 1) * 2000, // random duration
+        duration: (Math.random() + 1) * 2000, 
         direction: "alternate",
         fill: "both",
         iterations: Infinity,

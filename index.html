@@ -17,7 +17,7 @@
         <!-- NavBar -->
           <nav class="backdrop-filter backdrop-blur flex items-center justify-between h-16 w-full after:absolute after:w-full after:h-full font-semibold top-0">
 
-            <div class="px-10 flex justify-between w-full items-center relative">
+            <div class="mobil:px-5 px-10 flex justify-between w-full items-center relative">
               <a href="" class="hover:cursor-pointer z-10 "><i class="fa-solid fa-i "></i></a>
 
               <ul id="menuTranslate" class="flex gap-10 z-10 items-center  transition transition-all duration-700 linear flex mobil:hidden">
@@ -58,76 +58,79 @@
           </nav>
       </header>
 
-  <main class="px-10 my-12 relative" >
+  <main class="mobil:px-5 px-10  relative" >
         <!-- Home -->
-        <section id="home"  >
+        <section id="home"  class="relative" >
 
-            <div class="grid grid-cols-2  mobil:grid-cols-1 relative" id="balls">
+            <div class="relative" >
+
+              <div  class="grid gap-3 grid-cols-2 mobil:grid-cols-1" id="balls">
+                
               <!-- Home Description -->
-            <div  class="grid gap-3 justify-center mobil:order-2 order-1" >
+              <div class="grid gap-3 order-1 mobil:order-2">
+
+                <div class="grid">
+                  <div class="flex gap-3 items-center">
+                    <h2 class="grid text-4xl font-bold gap-3" id="title">
+                      Ismael Alvarez
+                    </h2>
+                    <div class="animate-wave  ">👋🏼</div>
+                  </div>
+                  <div class="flex items-center text-2xl mobil:text-lg gap-2 py-3">
+                    <span id="greet" class="font-normal ">
+                      Y yo soy un
+                    </span>
+                    <span id="write-text"></span>
+                  </div>
+                </div>
+  
+                <h4 id="moreGreet" class="text-2xl">And I'm a <span class="pr-3 text-second-color texto-animado" id="write-text" ></span></h4>
+  
+                <p id="smallDescription" class="text-gl">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at sunt ea dolorum a reiciendis itaque illo
+                </p>
+                <!-- Home icons -->
+                <ul class="flex gap-3 pt-5">
+                  <li>
+                    <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2">
+                      <i class="fa-brands fa-github-square fa-2x"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2">
+                      <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2" >
+                      <i class="fa-brands fa-square-x-twitter fa-2x"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2">
+                      <i class="fa-brands fa-square-instagram fa-2x"></i>
+                    </a>
+                  </li>
+                </ul>
+  
+                <button id="firstDowlnload" class="transition ease-in-out delay-150 dark:bg-white dark:text-black bg-black text-white hover:-translate-y-1 border-transparent border-4 hover:scale-110 hover:border-red-900 duration-300 p-3 rounded-md w-fit">
+                  Dowlnload CV
+                </button>
+
+              </div>
               
-              <div class="grid">
-                <div class="flex gap-3 items-center">
-                  <h2 class="grid text-4xl font-bold gap-3" id="title">
-                    Ismael Alvarez
-                  </h2>
-                  <div class="animate-wave  ">👋🏼</div>
-                </div>
-                <div class="flex items-center text-2xl mobil:text-lg gap-2 py-3">
-                  <span id="greet" class="font-normal ">
-                    Hola, soy yo
-                  </span>
-                  <span id="write-text"></span>
-                </div>
+              <!-- Home Image -->
+              <div class="grid justify-center relative items-start h-full mobil:order-1 order-2" >
+  
+                  <div class="dark:bg-white bg-black w-60 h-64 rounded-full  z-0 absolute transition-transform duration-700 ease transform  relative  overflow-hidden items-center justify-center hover:-translate-y-10" >
+                    <img class=" absolute w-full h-full cursor-pointer text-center" src="img/profile.png" alt="profile">
+                  </div>
+  
               </div>
-
-              <h4 id="moreGreet" class="text-2xl">And I'm a <span class="pr-3 text-second-color texto-animado" id="write-text" ></span></h4>
-
-              <p id="smallDescription" class="text-gl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at sunt ea dolorum a reiciendis itaque illo
-              </p>
-              <!-- Home icons -->
-              <ul class="flex gap-3 pt-5">
-                <li>
-                  <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2">
-                    <i class="fa-brands fa-github-square fa-2x"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2">
-                    <i class="fa-brands fa-linkedin fa-2x"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2" >
-                    <i class="fa-brands fa-square-x-twitter fa-2x"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="inline-block transition-transform duration-300 ease-out transform hover:-translate-y-2">
-                    <i class="fa-brands fa-square-instagram fa-2x"></i>
-                  </a>
-                </li>
-              </ul>
-
-              <button id="firstDowlnload" class="transition ease-in-out delay-150 dark:bg-white dark:text-black bg-black text-white hover:-translate-y-1 border-transparent border-4 hover:scale-110 hover:border-red-900 duration-300 p-3 rounded-md w-fit">
-                Dowlnload CV
-              </button>
-
+              
             </div>
 
-            <!-- Home Image -->
-            <div class="flex justify-center relative items-start h-full  mobil:order-1 order-2 mobil:py-10">
-
-                <div class="dark:bg-white bg-black w-60 h-64 rounded-full  z-0 absolute transition-transform duration-300 ease-in-out transform hover:blur-md relative  overflow-hidden items-center justify-center " >
-                  <img class=" absolute w-full h-full cursor-pointer text-center" src="img/profile.png" alt="profile">
-                </div>
-
-                <div class="absolute  rounded-full w-fit flex overflow-hidden ">
-              </div>
-            </div>
-            </div>
-
+          </div>
         </section>
 
 
@@ -140,12 +143,10 @@
               <!-- About Image  -->
               <div class="flex justify-center relative items-start h-full animate-75 ">
 
-                  <div class="dark:bg-white bg-black w-60 h-64 rounded-full  z-0 absolute transition-transform duration-300 ease-in-out transform hover:blur-md " >
-                  </div>
-
-                  <div class="relative  rounded-full w-60 flex overflow-hidden ">
-                    ><img src="img/profile.png" alt="profile">
+                <div class="dark:bg-white bg-black w-60 h-64 rounded-full  z-0 absolute transition-transform duration-700 ease transform  relative  overflow-hidden items-center justify-center hover:-translate-y-10" >
+                  <img class=" absolute w-full h-full cursor-pointer text-center" src="img/profile.png" alt="profile">
                 </div>
+
               </div>
 
 
